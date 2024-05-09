@@ -1,0 +1,254 @@
+*{
+  scroll-behavior: smooth
+}
+/* details > summary {
+  padding: 4px;
+  width: 200px;
+  background-color: #eeeeee;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+}
+
+details > p {
+  background-color: #eeeeee;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+} */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  /* background-color: #b8b8ff; */
+  font-family: "Frank Ruhl Libre", serif;
+}
+.listMenu {
+  display: flex;
+  /* flex-direction: column; */
+  list-style: none;
+}
+.menuItem {
+  color: black;
+  text-decoration: none;
+  padding-right: 1rem;
+  padding: 0.3rem 0.5rem;
+}
+  
+.menuItem::after {
+  border-bottom: solid black 1px;
+}
+
+.menuItemButton {
+  background-color: #72caea;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.logo {
+  filter: drop-shadow(2px 3px 1px #b4cded);
+  margin-left: 1rem;
+  font-family: "Sacramento", cursive;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+  
+.slides {
+  background-image: url("https://fgm-go.org.br/wp-content/uploads/2023/03/asdf.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Personas {
+  background-image: url("https://img.freepik.com/premium-vector/social-media-logo-seamless-pattern_625334-33.jpg?w=740");
+  /* background-repeat: repeat;
+  background-size: 100%; */
+ }
+
+.equipo {
+  background-image: url("https://st2.depositphotos.com/1361659/9540/v/450/depositphotos_95400734-stock-illustration-red-abstract-background.jpg");
+  /* background-image: url("https://st2.depositphotos.com/3503231/11873/v/450/depositphotos_118738048-stock-illustration-red-grid-mosaic-background-creative.jpg"); */
+}
+
+.resaltBlue {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.resaltBlue::after {
+  transition: width 0.5s ease;
+  content: "";
+  height: 0.3rem;
+  width: 3rem;
+  background: #72caea;
+}
+
+.resaltRed {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.resaltRed::after {
+  transition: width 0.5s ease;
+  content: "";
+  height: 0.3rem;
+  width: 3rem;
+  background: #b91c1c;
+}
+
+
+div#slider { overflow: hidden; } /* las imágenes no van a salir del márgen de la pantalla*/
+div#slider figure img { width: 20%; float: left; }
+
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite; /*el movimiento se va a mantener de forma indefinida -infinito-*/
+}
+
+
+.preguntas {
+  overflow: hidden;
+  max-height: 0;
+  text-align: justify;
+  font-family: "Courier New", Courier, monospace;
+  transition: all 0.3s ease-in;
+}
+
+/* div a {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  border: 1px solid rgb(192, 191, 191);
+} */
+
+div:target p {
+  max-height: fit-content;
+  padding: 10px;
+}
+.precios {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/006/688/262/non_2x/triangle-geometric-black-3d-background-dark-mosaic-geometry-pattern-polygon-shape-pattern-backdrop-triangular-creative-template-abstract-modern-wallpaper-design-illustration-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.plan {
+  border-radius: 16px;
+  box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+  /* padding: 10px; */
+  background-color: #fff;
+  color: #697e91;
+  max-width: 300px;
+}
+
+.plan strong {
+  font-weight: 600;
+  color: #425275;
+}
+
+.plan .inner {
+  align-items: center;
+  padding: 20px;
+  padding-top: 40px;
+  background-color: #ecf0ff;
+  border-radius: 12px;
+  position: relative;
+}
+
+.plan .pricing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #B91C1C;
+  border-radius: 99em 0 0 99em;
+  display: flex;
+  align-items: center;
+  padding: 0.625em 0.75em;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.plan .pricing small {
+  color: #ffffffc7;
+  font-size: 0.75em;
+  margin-left: 0.25em;
+}
+
+.plan .title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #425675;
+}
+
+.plan .title + * {
+  margin-top: 0.75rem;
+}
+
+.plan .info + * {
+  margin-top: 1rem;
+}
+
+.plan .features {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan .features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.plan .features li + * {
+  margin-top: 0.75rem;
+}
+
+.plan .features .icon {
+  background-color: #72caea;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.plan .features .icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.plan .features + * {
+  margin-top: 1.25rem;
+}
+
+.plan .action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+/*esta parte del código define el movimiento de las imágenes a la izquierda*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
