@@ -1306,6 +1306,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: #0512F9;
 }
+.bg-\[\#FE0000\] {
+  --tw-bg-opacity: 1;
+  background-color: #FE0000;
+}
 .bg-\[\#0F0F0F\] {
   --tw-bg-opacity: 1;
   background-color: #0F0F0F;
