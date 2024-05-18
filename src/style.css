@@ -1,27 +1,11 @@
 *{
   scroll-behavior: smooth
 }
-/* details > summary {
-  padding: 4px;
-  width: 200px;
-  background-color: #eeeeee;
-  border: none;
-  box-shadow: 1px 1px 2px #bbbbbb;
-  cursor: pointer;
-}
-
-details > p {
-  background-color: #eeeeee;
-  padding: 4px;
-  margin: 0;
-  box-shadow: 1px 1px 2px #bbbbbb;
-} */
 .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem;
-  /* background-color: #b8b8ff; */
   font-family: "Frank Ruhl Libre", serif;
 }
 .listMenu {
@@ -41,7 +25,7 @@ details > p {
 }
 
 .menuItemButton {
-  background-color: #72caea;
+  background-color: #0512F9;
   padding: 1rem;
   border-radius: 1rem;
 }
@@ -83,7 +67,7 @@ details > p {
   content: "";
   height: 0.3rem;
   width: 3rem;
-  background: #72caea;
+  background: #0512F9;
 }
 
 .resaltRed {
@@ -121,6 +105,7 @@ div#slider figure {
   text-align: justify;
   font-family: "Courier New", Courier, monospace;
   transition: all 0.3s ease-in;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/006/688/262/non_2x/triangle-geometric-black-3d-background-dark-mosaic-geometry-pattern-polygon-shape-pattern-backdrop-triangular-creative-template-abstract-modern-wallpaper-design-illustration-vector.jpg");
 }
 
 /* div a {
@@ -214,7 +199,7 @@ div:target p {
 }
 
 .plan .features .icon {
-  background-color: #72caea;
+  background-color: #0512F9;
   display: inline-flex;
   align-items: center;
   justify-content: center;
