@@ -1,6 +1,9 @@
 *{
   scroll-behavior: smooth
 }
+header {
+  z-index: 9999;
+}
 .menu {
   display: flex;
   align-items: center;

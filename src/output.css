@@ -1492,15 +1492,29 @@ video {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+.pt-20 {
+  padding-top: 5rem;
+}
+.pb-20 {
+  padding-bottom: 5rem;
+}
 
 .py-28 {
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
+.py-48 {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
 
 .py-36 {
   padding-top: 9rem;
   padding-bottom: 9rem;
+}
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .px-8 {
@@ -2060,9 +2074,15 @@ video {
   .sm\:w-auto {
     width: auto;
   }
+  .sm\:flex {
+    display: flex;
+  }
 
   .sm\:flex-col {
     flex-direction: column;
+  }
+  .sm\:p-10 {
+    padding: 0rem;
   }
 }
 
@@ -2117,6 +2137,9 @@ video {
 
   .lg\:flex {
     display: flex;
+  }
+  .lg\:fixed {
+    position: fixed;
   }
 
   .lg\:h-fit {
