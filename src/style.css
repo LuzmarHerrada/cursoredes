@@ -72,6 +72,25 @@ header {
   width: 3rem;
   background: #0512F9;
 }
+.resaltHeader {
+  display: relative;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.resaltHeader::after {
+  transition: width 0.5s ease;
+  content: "";
+  height: 0.15rem;
+  width: 0rem;
+  background: #0512F9;
+}
+.resaltHeader:hover::after,
+.resaltHeader:focus::after {
+  height: 0.15rem;
+  width: 100%;
+  background: #0512F9;
+}
 
 .resaltRed {
   display: flex;
